@@ -4,6 +4,7 @@ USER root
 
 RUN npm install -g \
     sharp \
+    canvas \
     n8n-nodes-trends \
     n8n-nodes-image-compress
 
