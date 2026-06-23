@@ -2,9 +2,10 @@ FROM n8nio/n8n:2.23.2
 
 USER root
 
-RUN npm install -g \
+RUN apk add --no-cache fontconfig ttf-dejavu && \
+    npm install -g \
     sharp \
-    canvas \
+    @napi-rs/canvas \
     n8n-nodes-trends \
     n8n-nodes-image-compress
 
