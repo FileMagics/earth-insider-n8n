@@ -2,6 +2,8 @@ FROM n8nio/n8n:2.28.4
 
 USER root
 
+RUN npm install -g sharp
+
 ENV N8N_LISTEN_ADDRESS=0.0.0.0
 
 USER node
